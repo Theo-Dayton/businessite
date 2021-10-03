@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+   }
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+}
+h2 {
+    font-weight: 500;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5bfd4f00710699387b6a460a/1543419663922-5HSYZTBIDEIQ14V7X7K6/darkbg.jpg?format=2500w");
+}
+
+#navbar {
+    background-color: rgb(82, 82, 82);
+    overflow: hidden;
+    padding: 20px 20px;
+    position: static;
+}
+  
+#navbar a {
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+  
+#navbar a:hover {
+    color: #aa0404;
+}
+  
+#navbar a.active {
+    color: #aa0404;
+}
+
+#navbar img {
+    margin: -10px;
+    max-width: 3rem;
+    max-height: 3rem;
+    float:right;
+}
+
+#frontpage {
+    padding:2em;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    margin: 0 2em;
+    text-align: center;
+}
+
+#frontpage img{
+    width: 300px;
+    height: auto;
+}
+
+#frontpage h1,h2 {
+    padding: 1em;
+}
+
+#frontpage a {
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100vw;
+    max-width: 100%;
+    margin: auto;
+    height: 50vh;
+    object-fit: cover;
+    background-repeat: repeat-y;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+.fadein { 
+    position:relative;
+}
+.fadein img { 
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(39, 38, 38);
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: .7em;
+    color:rgb(177, 177, 177)
+}
+
+
+.spacer {
+    height: 50vh;
+    object-fit: cover;
+}
+
+.columnimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 50rem;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.button {
+    background-color: #414141; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #aa0404; 
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover {
+    color: #aa0404;
+}
+   
+
+@media only screen and (max-width: 768px) {
+
+    #navbar a {
+    margin: -10px;
+    float: none;
+    }
+
+    #navbar img {
+    display:none
+    }
+
+    #bg {
+        height: 100%;
+        background-position: 50% 50%;
+        background-size: 110%;
+    }
+
+    .fadein img {
+    height: 25vh;
+    }
+
+    .spacer {
+      height: 25vh;
+    }
+
+    .column {
+        width: 100%;
+      }
+
+    footer {
+        font-size: .5rem;
+    }
+
+    .columnimage {
+        width: 70%;
+        height: auto;
+        object-fit:contain
+    }
+
+    #frontpage img{
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .columnimage {
+        height: 20rem;
+    }
+}
