@@ -205,7 +205,6 @@ a:hover {
     #navbar a {
         margin: -10px;
         float: none;
-        font-size: 1em;
     }
 
     #navbar img {
@@ -219,7 +218,7 @@ a:hover {
     }
 
     .fadein img {
-    height: 25vh;
+        height: 25vh;
     }
 
     .spacer {
