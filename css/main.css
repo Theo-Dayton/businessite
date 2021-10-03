@@ -205,10 +205,11 @@ a:hover {
     #navbar a {
         margin: -10px;
         float: none;
+        font-size: 30vh;
     }
 
     #navbar img {
-    display:none
+        display:none
     }
 
     #bg {
